@@ -1,0 +1,12 @@
+.search {
+  display: flex;
+  height: 64px;
+  width: 80%;
+  background-color: #130f40;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
