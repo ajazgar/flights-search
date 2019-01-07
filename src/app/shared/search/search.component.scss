@@ -1,0 +1,16 @@
+@import "../components-styles/item-flex";
+
+.search {
+  display: flex;
+  height: 64px;
+  width: 80%;
+  border-radius: 13px;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  background-color: rgba(193, 208, 217, 0.35);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: space-around;
+}
