@@ -9,3 +9,12 @@ body {
   overflow: hidden;
   background: linear-gradient(184deg, rgba(66,66,105,1) 0%, rgba(66,66,105,1) 15%, rgba(151,102,87,1) 64%, rgba(214,130,74,1) 100%);
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+}
