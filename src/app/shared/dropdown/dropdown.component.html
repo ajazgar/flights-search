@@ -1,0 +1,13 @@
+<div class="drp-wrapper">
+  <div class="drp-input item-flex">
+    <img src="../../../assets/icons/ic_group_24px.svg" class="icon-drp">
+    <div class="drp-text">
+      {{personsAmount}} - {{travelClass}}
+    </div>
+    <img src="../../../assets/icons/ic_keyboard_arrow_down_24px.svg" class="icon-drp" (click)="toggleDropdown()">
+  </div>
+
+  <div class="drp-list item-flex" *ngIf="dropdownOpened">
+
+  </div>
+</div>

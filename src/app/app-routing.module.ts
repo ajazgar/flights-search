@@ -3,8 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 import {HotelsComponent} from './pages/hotels/hotels.component';
 import {CarsComponent} from './pages/cars/cars.component';
 import {DiscoverComponent} from './pages/discover/discover.component';
+import {AppComponent} from './app.component';
 
 const routes: Routes = [
+  {path: 'loty', component: AppComponent},
   {path: 'hotele', component: HotelsComponent},
   {path: 'samochody', component: CarsComponent},
   {path: 'discover', component: DiscoverComponent},

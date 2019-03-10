@@ -8,6 +8,9 @@ import { SearchComponent } from './shared/search/search.component';
 import { HotelsComponent } from './pages/hotels/hotels.component';
 import { CarsComponent } from './pages/cars/cars.component';
 import { DiscoverComponent } from './pages/discover/discover.component';
+import { DropdownComponent } from './shared/dropdown/dropdown.component';
+import { SearchHeaderComponent } from './shared/search-header/search-header.component';
+import { CheckboxComponent } from './shared/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { DiscoverComponent } from './pages/discover/discover.component';
     SearchComponent,
     HotelsComponent,
     CarsComponent,
-    DiscoverComponent
+    DiscoverComponent,
+    DropdownComponent,
+    SearchHeaderComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,

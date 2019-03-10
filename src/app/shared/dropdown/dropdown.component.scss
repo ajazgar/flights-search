@@ -1,0 +1,12 @@
+@import "../components-styles/item-flex";
+@import "../components-styles/icon-drp";
+
+:host {
+  display: flex;
+
+  .item-flex {
+    padding: 0;
+  }
+
+}
+
