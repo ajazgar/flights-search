@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  position: relative;
+  padding: 0 140px;
+  cursor: pointer;
+
+  .checkbox {
+    width: 18px;
+    height: 18px;
+  }
+
+  label {
+    color: #D4D4CE;
+    cursor: inherit;
+  }
+}

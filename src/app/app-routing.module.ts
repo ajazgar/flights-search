@@ -6,6 +6,7 @@ import {DiscoverComponent} from './pages/discover/discover.component';
 import {AppComponent} from './app.component';
 
 const routes: Routes = [
+  {path: '', redirectTo: '/loty', pathMatch: 'full'},
   {path: 'loty', component: AppComponent},
   {path: 'hotele', component: HotelsComponent},
   {path: 'samochody', component: CarsComponent},
