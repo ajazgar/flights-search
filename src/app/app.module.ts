@@ -11,6 +11,9 @@ import { DiscoverComponent } from './pages/discover/discover.component';
 import { DropdownComponent } from './shared/dropdown/dropdown.component';
 import { SearchHeaderComponent } from './shared/search-header/search-header.component';
 import { CheckboxComponent } from './shared/checkbox/checkbox.component';
+import { RecommendationsComponent } from './shared/recommendations/recommendations.component';
+import { FooterComponent} from './shared/footer/footer.component';
+import { ReviewsComponent } from './shared/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { CheckboxComponent } from './shared/checkbox/checkbox.component';
     DiscoverComponent,
     DropdownComponent,
     SearchHeaderComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    RecommendationsComponent,
+    FooterComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,

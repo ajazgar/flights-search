@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FightersService} from '../../fighters.service';
 
 @Component({
   selector: 'app-dropdown',
@@ -11,9 +12,14 @@ export class DropdownComponent implements OnInit {
   personsAmount = 1;
   travelClass = 'business';
 
-  constructor() { }
+  fighters: any;
+
+  constructor(private fightersService: FightersService) { }
 
   ngOnInit() {
+    this.fightersService.get().subscribe(data => {
+      this.fighters = data;
+    });
   }
 
   toggleDropdown() {
