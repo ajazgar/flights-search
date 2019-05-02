@@ -15,6 +15,7 @@ import { RecommendationsComponent } from './shared/recommendations/recommendatio
 import { FooterComponent} from './shared/footer/footer.component';
 import { ReviewsComponent } from './shared/reviews/reviews.component';
 import { BtnSecondaryComponent } from './shared/btn-secondary/btn-secondary.component';
+import { BtnPrimaryComponent } from './shared/btn-primary/btn-primary.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { BtnSecondaryComponent } from './shared/btn-secondary/btn-secondary.comp
     RecommendationsComponent,
     FooterComponent,
     ReviewsComponent,
-    BtnSecondaryComponent
+    BtnSecondaryComponent,
+    BtnPrimaryComponent
   ],
   imports: [
     BrowserModule,

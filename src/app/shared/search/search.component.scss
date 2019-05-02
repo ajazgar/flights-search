@@ -7,6 +7,7 @@
   justify-content: center;
   align-items: center;
   padding: 0 140px;
+  margin: 12px 0;
 
   .search {
     display: inline-flex;
@@ -25,25 +26,12 @@
     input {
       border: none;
       padding: 0;
+      box-shadow: none;
     }
 
     input:focus {
       outline: none;
     }
-  }
-
-  .button-circle {
-    display: inline-flex;
-    background-color: #FF5252;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.20);
-    cursor: pointer;
-    margin-left: 24px;
   }
 }
 
