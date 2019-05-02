@@ -1,0 +1,21 @@
+@import "../components-styles/item-flex";
+
+
+:host {
+  display: flex;
+  justify-content: center;
+
+  .btn-wrapper {
+    width: auto;
+    background-color: transparent;
+    border: 1px solid #D4D4CE;
+    margin: 24px 0;
+    cursor: pointer;
+
+    .btn-text {
+      color: #D4D4CE;
+      font-size: 18px;
+    }
+  }
+}
+
