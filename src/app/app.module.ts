@@ -14,6 +14,7 @@ import { CheckboxComponent } from './shared/checkbox/checkbox.component';
 import { RecommendationsComponent } from './shared/recommendations/recommendations.component';
 import { FooterComponent} from './shared/footer/footer.component';
 import { ReviewsComponent } from './shared/reviews/reviews.component';
+import { BtnSecondaryComponent } from './shared/btn-secondary/btn-secondary.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReviewsComponent } from './shared/reviews/reviews.component';
     CheckboxComponent,
     RecommendationsComponent,
     FooterComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    BtnSecondaryComponent
   ],
   imports: [
     BrowserModule,
