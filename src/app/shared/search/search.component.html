@@ -1,5 +1,10 @@
+<div class="search-header">
+  <div class="header-text" id="one">W jedną stronę</div>
+  <div class="header-text" id="two">W dwie strony</div>
+  <div class="header-text" id="three">Multi-city</div>
+</div>
+
 <div class="search">
-  <!--<img src="../../../assets/icons/ic_search_24px.svg" class="icon-drp">-->
   <div class="item-flex">
     <img src="../../../assets/icons/ic_flight_takeoff_24px.svg" class="icon-drp">
     <input class="item-flex" placeholder="Skąd?">
@@ -13,7 +18,7 @@
     <input class="item-flex" placeholder="pon. 25.03 - pon. 25.03">
   </div>
   <app-dropdown></app-dropdown>
-  <app-btn-primary></app-btn-primary>
+  <app-btn-primary [btnText]="'Wyszukaj'"></app-btn-primary>
 </div>
 
 

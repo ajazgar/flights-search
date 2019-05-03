@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FightersService} from '../../fighters.service';
+import {ClassesService} from '../../classes.service';
+import {PassengersService} from '../../passengers.service';
 
 @Component({
   selector: 'app-dropdown',
@@ -9,16 +10,19 @@ import {FightersService} from '../../fighters.service';
 export class DropdownComponent implements OnInit {
 
   dropdownOpened: boolean;
-  personsAmount = 1;
-  travelClass = 'business';
+  personsAmount = '1 osoba';
+  travelClass: any;
+  passengers: any;
 
-  fighters: any;
-
-  constructor(private fightersService: FightersService) { }
+  constructor(private classesService: ClassesService, private passengersService: PassengersService) { }
 
   ngOnInit() {
-    this.fightersService.get().subscribe(data => {
-      this.fighters = data;
+    this.classesService.get().subscribe(data => {
+      this.travelClass = data;
+    });
+
+    this.passengersService.get().subscribe(data => {
+      this.passengers = data;
     });
   }
 

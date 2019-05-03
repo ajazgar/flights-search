@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FightersService} from './fighters.service';
+import {ClassesService} from './classes.service';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,10 @@ import {FightersService} from './fighters.service';
 })
 export class AppComponent implements OnInit {
   title = 'app';
+
+  isOneWay: boolean;
+  isTwoWays: boolean;
+  isMultiCity: boolean;
 
   constructor() { }
 

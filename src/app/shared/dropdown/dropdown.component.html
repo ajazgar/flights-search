@@ -1,15 +1,21 @@
 <div class="drp-wrapper">
-  <div class="drp-input item-flex">
+  <div class="drp-input item-flex" (click)="toggleDropdown()">
     <img src="../../../assets/icons/ic_group_24px.svg" class="icon-drp">
     <div class="drp-text">
-      {{personsAmount}} - {{travelClass}}
+      {{personsAmount}} - ekonomiczna
     </div>
-    <img src="../../../assets/icons/ic_keyboard_arrow_down_24px.svg" class="icon-drp" (click)="toggleDropdown()">
+    <img src="../../../assets/icons/ic_keyboard_arrow_down_24px.svg" class="icon-drp">
   </div>
 
   <div class="drp-list item-flex" *ngIf="dropdownOpened">
-      <div class="drp-list-scroll" *ngFor="let fighter of fighters">
-        <span>{{fighter.name}}</span>
-      </div>
+    <span class="drp-list__title">Klasa</span>
+    <div class="drp-list__scroll" *ngFor="let travel of travelClass">
+       <span>{{travel.class}}</span>
+    </div>
+    <span class="drp-list__title">Podróżni</span>
+    <div class="drp-list__scroll" *ngFor="let passenger of passengers">
+      <span>{{passenger.type}}</span><span>{{passenger.age}}</span>
+      <app-stepper></app-stepper>
+    </div>
   </div>
 </div>

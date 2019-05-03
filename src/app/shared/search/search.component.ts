@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, HostListener, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-search',
@@ -7,8 +7,15 @@ import {Component, OnInit} from '@angular/core';
 })
 export class SearchComponent implements OnInit {
 
+  isWayClicked: boolean;
 
-  constructor() { }
+
+  constructor(private el: ElementRef) { }
+
+
+  @HostListener('click', ['$event.target.id']) onClick(id: any) {
+    this.el.nativeElement.style.addClass(id, 'checked');
+  }
 
   ngOnInit() {
   }
