@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, ElementRef, HostListener, OnInit} from '@angular/core';
 import {ClassesService} from '../../classes.service';
 import {PassengersService} from '../../passengers.service';
 
@@ -14,7 +14,7 @@ export class DropdownComponent implements OnInit {
   travelClass: any;
   passengers: any;
 
-  constructor(private classesService: ClassesService, private passengersService: PassengersService) { }
+  constructor(private classesService: ClassesService, private passengersService: PassengersService, private el: ElementRef) { }
 
   ngOnInit() {
     this.classesService.get().subscribe(data => {
@@ -24,6 +24,10 @@ export class DropdownComponent implements OnInit {
     this.passengersService.get().subscribe(data => {
       this.passengers = data;
     });
+  }
+
+  @HostListener('click', ['$event.target.id']) onClick(id: any) {
+    this.el.nativeElement.style.getElementById('travel');
   }
 
   toggleDropdown() {

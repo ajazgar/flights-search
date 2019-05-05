@@ -9,13 +9,12 @@
 
   <div class="drp-list item-flex" *ngIf="dropdownOpened">
     <span class="drp-list__title">Klasa</span>
-    <div class="drp-list__scroll" *ngFor="let travel of travelClass">
-       <span>{{travel.class}}</span>
+    <div class="drp-list__scroll" >
+       <span id="travel" *ngFor="let travel of travelClass">{{travel.class}}</span>
     </div>
     <span class="drp-list__title">Podróżni</span>
-    <div class="drp-list__scroll" *ngFor="let passenger of passengers">
-      <span>{{passenger.type}}</span><span>{{passenger.age}}</span>
-      <app-stepper></app-stepper>
+    <div class="drp-list__scroll">
+      <span *ngFor="let passenger of passengers">{{passenger.type}} {{passenger.age}}</span>
     </div>
   </div>
 </div>

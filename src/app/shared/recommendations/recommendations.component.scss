@@ -27,27 +27,41 @@
     max-height: 400px;
     margin-top: 24px;
 
-    .overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
-      width: 100%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      transition: .5s ease;
-      background-color: #008CBA;
-    }
-
     .row-square {
       cursor: pointer;
+
+
+      &__description {
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        position: absolute;
+        bottom: 40px;
+        left: 47px;
+
+        span {
+          color: #ffffff;
+        }
+
+        .line {
+          display: flex;
+          height: 3px;
+          background-color: #ffffff;
+          width: 100%;
+        }
+      }
 
     }
 
     img {
       width: 415px;
+      opacity: 1;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .row-square:hover img {
+      opacity: 0.3;
     }
 
     img:hover .overlay {

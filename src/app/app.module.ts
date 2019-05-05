@@ -24,6 +24,7 @@ import { ModalComponent } from './shared/modal/modal.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

@@ -11,6 +11,12 @@ export class RecommendationsComponent implements OnInit {
   @Input() country: string;
   @Input() inspiration: string;
 
+  recommendedCities:  Array<object> = [
+    { name: 'Nowy Jork'},
+    { name: 'Barcelona'},
+    { name: 'Sydney'},
+  ];
+
   constructor() { }
 
   ngOnInit() {

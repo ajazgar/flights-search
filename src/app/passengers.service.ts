@@ -10,7 +10,7 @@ export class PassengersService {
 
   passengers: Array<object> = [
     { type: 'Dorośli', age: '18+'},
-    { type: 'Młodzięż', age: '12-17'},
+    { type: 'Młodzież', age: '12-17'},
     { type: 'Dzieci', age: '2-11'},
     { type: 'Niemowlęta', age: '<2'}
   ];
