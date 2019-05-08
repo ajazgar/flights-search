@@ -17,9 +17,9 @@
       <span *ngIf="inspiration">Czytaj więcej</span>
     </div>
 
-    <img *ngIf="city" src="../../../assets/img/chelsea-london-phillips-779135-unsplash.png"/>
-    <img *ngIf="country" src="../../../assets/img/manuel-cosentino-691602-unsplash.png"/>
-    <img *ngIf="inspiration" src="../../../assets/img/sydney-rae-421261-unsplash.png"/>
+    <a routerLink="/loty/recommended"><img *ngIf="city" src="../../../assets/img/chelsea-london-phillips-779135-unsplash.png"/></a>
+    <a routerLink="/loty/recommended"><img *ngIf="country" src="../../../assets/img/manuel-cosentino-691602-unsplash.png"/></a>
+    <a routerLink="/loty/recommended"><img *ngIf="inspiration" src="../../../assets/img/sydney-rae-421261-unsplash.png"/></a>
   </div>
   <div class="row-square col-md-4">
 
@@ -52,3 +52,4 @@
     <img *ngIf="inspiration" src="../../../assets/img/adam-jang-311043-unsplash.png"/>
   </div>
 </div>
+<router-outlet></router-outlet>

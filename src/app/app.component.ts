@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {ClassesService} from './classes.service';
 
 @Component({
   selector: 'app-root',
@@ -13,8 +12,9 @@ export class AppComponent implements OnInit {
   isTwoWays: boolean;
   isMultiCity: boolean;
 
-  constructor() { }
+  constructor() {   }
 
   ngOnInit() {
   }
+
 }

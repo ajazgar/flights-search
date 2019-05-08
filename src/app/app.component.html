@@ -6,11 +6,13 @@
   Wyruszaj w świat!
 </div>
 <app-modal></app-modal>
-<app-search></app-search>
-<app-checkbox></app-checkbox>
-<app-recommendations [city]="'Popularne miasta'"></app-recommendations>
-<app-recommendations [country]="'Popularne kraje'"></app-recommendations>
-<app-recommendations [inspiration]="'Inspiracje podróżnicze'"></app-recommendations>
-<app-btn-secondary [buttonSecondaryText]="'Więcej informacji'"></app-btn-secondary>
-<app-reviews></app-reviews>
-<app-footer></app-footer>
+<!--Acts as a placeholder that Angular dynamically fills based on the current router state.-->
+<router-outlet></router-outlet>
+<!--<app-search></app-search>-->
+<!--<app-checkbox></app-checkbox>-->
+<!--<app-recommendations [city]="'Popularne miasta'"></app-recommendations>-->
+<!--<app-recommendations [country]="'Popularne kraje'"></app-recommendations>-->
+<!--<app-recommendations [inspiration]="'Inspiracje podróżnicze'"></app-recommendations>-->
+<!--<app-btn-secondary [buttonSecondaryText]="'Więcej informacji'"></app-btn-secondary>-->
+<!--<app-reviews></app-reviews>-->
+<!--<app-footer></app-footer>-->

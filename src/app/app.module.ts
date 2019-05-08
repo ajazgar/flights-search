@@ -21,6 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import {HighlightDirective} from './highlight.directive';
 import { ModalComponent } from './shared/modal/modal.component';
+import { FlightsComponent } from './pages/flights/flights.component';
+import { ResultTableComponent } from './shared/result-table/result-table.component';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -42,13 +45,16 @@ import { ModalComponent } from './shared/modal/modal.component';
     BtnPrimaryComponent,
     StepperComponent,
     HighlightDirective,
-    ModalComponent
+    ModalComponent,
+    FlightsComponent,
+    ResultTableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     InputsModule,
     BrowserAnimationsModule,
+    FormsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],
