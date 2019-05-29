@@ -19,7 +19,6 @@ import { StepperComponent } from './shared/stepper/stepper.component';
 import { InputsModule } from '@progress/kendo-angular-inputs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import {HighlightDirective} from './highlight.directive';
 import { ModalComponent } from './shared/modal/modal.component';
 import { FlightsComponent } from './pages/flights/flights.component';
 import { ResultTableComponent } from './shared/result-table/result-table.component';
@@ -44,7 +43,6 @@ import {FormsModule} from '@angular/forms';
     BtnSecondaryComponent,
     BtnPrimaryComponent,
     StepperComponent,
-    HighlightDirective,
     ModalComponent,
     FlightsComponent,
     ResultTableComponent,
